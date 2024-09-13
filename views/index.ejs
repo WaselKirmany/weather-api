@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <form action="/submit" method="post">
+                <div id="input"><input type="text" placeholder="Enter Latitude" name="lat"></div>
+                <div id="input"><input type="text" placeholder="Enter Longitude" name="lon"></div>
+                <div id="input"><button id="btn">Submit</button></div>
+            </form>
+
+        <div class="data">
+        <%if(locals.description){%>
+        <p><%=description%></p>
+        <%}%>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
